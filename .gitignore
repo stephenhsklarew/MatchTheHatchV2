@@ -1,0 +1,22 @@
+# Ignore large data file
+ml_model/data.zip
+
+# Python virtual environment
+venv/
+
+# iPython notebook checkpoints
+.ipynb_checkpoints/
+
+# Metadata files from beads
+.beads/beads.db
+.beads/daemon.lock
+.beads/daemon.log
+.beads/daemon.pid
+.beads/bd.sock
+.beads/beads.base.jsonl
+.beads/beads.base.meta.json
+.beads/beads.left.jsonl
+.beads/beads.left.meta.json
+.beads/beads.right.jsonl
+.beads/beads.right.meta.json
+
