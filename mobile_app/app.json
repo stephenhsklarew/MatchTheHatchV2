@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "MatchTheHatch",
+    "slug": "match-the-hatch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "matchthehatch",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B5E20"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "MatchTheHatch needs camera access to photograph insects for identification.",
+        "NSPhotoLibraryUsageDescription": "MatchTheHatch needs photo library access to select insect photos for identification."
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "MatchTheHatch needs camera access to photograph insects for identification."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "MatchTheHatch needs photo library access to select insect photos for identification."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
